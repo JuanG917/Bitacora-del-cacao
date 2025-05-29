@@ -1,0 +1,153 @@
+/* comun.css */
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background-color: #f7f3ed;
+  color: #3e2c1c;
+  padding: 0;
+  overflow-x: hidden; /* oculta cualquier desborde extra */
+}
+
+header, section, footer {
+  padding: 2rem;
+}
+
+h1, h2 {
+  margin-bottom: 0.5rem;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+}
+
+.highlight {
+  background-color: #e8dac6;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.modules {
+  display: flex;
+  gap: 1.5rem;
+  align-items: stretch; /* iguala altura de los módulos */
+}
+
+.module {
+  background: #fff;
+  border: 1px solid #d8cfc1;
+  padding: 1rem;
+  border-radius: 10px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.module p {
+  flex-grow: 1; /* ocupa todo el espacio disponible para empujar el botón abajo */
+}
+
+.module button {
+  margin-top: 1rem;
+  align-self: start; /* o center si lo prefieres centrado */
+}
+
+footer {
+  background: #4b2e1f;
+  color: white;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Justificar textos generales */
+p, li, h2, h3, h4 {
+  text-align: justify;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 0.8rem 2rem;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  backdrop-filter: blur(5px);
+  box-sizing: border-box;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.nav-logo-img {
+  height: 36px;
+  margin-right: 0.5rem;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  white-space: nowrap;
+}
+
+.nav-menu a:hover {
+  color: #e8dac6;
+}
+
+
+@media screen and (max-width: 768px) {
+  .modules {
+    flex-direction: column;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .container {
+    padding: 1rem;
+  }
+}
+
+h2 {
+  font-size: 2rem !important;     /* Aumenta el tamaño (32px) */
+  font-weight: bold !important;   /* Aplica negrita */
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+

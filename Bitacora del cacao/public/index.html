@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bitácora del Cacao</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="estilo.css" />
+  <link rel="stylesheet" href="inicio.css" />
+  <link rel="stylesheet" href="switch.css" />
+  <link rel="stylesheet" href="formulario.css" />
+  <script src="navbarScroll.js"></script>
+  <script src="contraste.js"></script>
+
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="nav-logo">
+        <img src="Imagenes_inicio/logo.png" alt="Logo" class="nav-logo-img" />
+        <span class="nav-logo-text">Bitácora del Cacao</span>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="arcade.html">Máquina Arcade</a></li>
+        <li><a href="tiendita.html">Tiendita</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero_container">
+      <h1 class="hero_title">Bitácora del Cacao</h1>
+      <p class="hero_paragraph">Explora la domesticación del cacao a través de una experiencia phygital</p>
+    </div>
+  </header>
+
+  <section class="container">
+    <h2>¿Qué es?</h2>
+    <p>La Bitácora del Cacao es una propuesta de divulgación científica que forma parte de la exposición Biofilia Viajera, una iniciativa promovida por la Universidad EAFIT en alianza con otras instituciones. El objetivo principal del proyecto es acercar el conocimiento sobre la domesticación del cacao a jóvenes universitarios mediante experiencias interactivas, accesibles y significativas. Esta propuesta se enmarca en un enfoque phygital, es decir, que combina lo físico y lo digital para crear un recorrido completo que pueda vivirse tanto en el espacio físico de la universidad como en plataformas digitales.</p>
+    <p>El proyecto responde a la necesidad de crear nuevos formatos de aprendizaje para públicos que demandan experiencias sensoriales, narrativas envolventes y formas de interacción más atractivas que los formatos educativos tradicionales. A través de la Bitácora del Cacao, se plantea un espacio de encuentro entre la ciencia y la creatividad, donde el contenido académico se traduce en juegos, muestras sensoriales, objetos interactivos y narrativas visuales que permiten al usuario aprender haciendo.</p>
+  </section>
+
+  <section class="container">
+    <h2>Propuesta de valor</h2>
+    <div class="highlight">
+      <p>La Bitácora del Cacao convierte la divulgación científica en una vivencia lúdica, emocional y educativa. Lo que diferencia esta experiencia de otras propuestas es su enfoque centrado en el usuario y su capacidad de adaptar el contenido científico a los códigos culturales y comunicativos de los jóvenes. Esto se logra mediante una combinación equilibrada entre estímulos sensoriales (olfato, gusto, tacto), interacción digital (minijuegos, navegación visual) y narrativa (historias breves que contextualizan el conocimiento).</p>
+      <p>Al ofrecer diferentes puntos de acceso —como la máquina arcade, la tiendita sensorial y la plataforma digital— la propuesta permite que cada usuario se acerque al contenido desde su propia motivación: curiosidad, entretenimiento, interés académico o exploración. La propuesta no impone una forma única de aprender, sino que invita a cada visitante a descubrir su propio camino dentro del recorrido. Así, la Bitácora del Cacao fomenta una relación más afectiva, dinámica y profunda con el conocimiento científico.</p>
+    </div>
+  </section>
+
+  <section class="container">
+    <h2>Componentes de la experiencia</h2>
+    <div class="modules">
+      <div class="module">
+        <h3>🎮 Máquina Arcade</h3>
+        <p>Una máquina interactiva con minijuegos que explican las diferentes fases del proceso de domesticación del cacao. Mediante una narrativa divertida y una interfaz de tipo videojuego, los usuarios aprenden mientras juegan. Al completar la experiencia, reciben como recompensa una muestra de chocolate, integrando así el sentido del gusto al proceso educativo.</p>
+        <a href="arcade.html">
+          <div class="relative group mt-4">
+            <button class="relative inline-block p-px font-semibold leading-6 text-white bg-gray-800 shadow-2xl cursor-pointer rounded-xl shadow-zinc-900 transition-transform duration-300 ease-in-out hover:scale-105 active:scale-95">
+              <span class="absolute inset-0 rounded-xl bg-gradient-to-r from-teal-400 via-blue-500 to-purple-500 p-[2px] opacity-0 transition-opacity duration-500 group-hover:opacity-100"></span>
+              <span class="relative z-10 block px-6 py-2 rounded-xl bg-gray-950">
+                <span class="transition-all duration-500 group-hover:translate-x-1 inline-block">Saber más</span>
+              </span>
+            </button>
+          </div>
+        </a>
+      </div>
+      <div class="module">
+        <h3>🧴 Tiendita del cacao</h3>
+        <p>Un espacio físico diseñado para la exploración táctil y olfativa del cacao. Los visitantes pueden oler, tocar y observar diferentes muestras de cacao en distintas fases de su transformación. Esta interacción directa con los objetos fortalece la conexión emocional y cognitiva con el contenido científico presentado.</p>
+        <a href="tiendita.html">
+          <div class="relative group mt-4">
+            <button class="relative inline-block p-px font-semibold leading-6 text-white bg-gray-800 shadow-2xl cursor-pointer rounded-xl shadow-zinc-900 transition-transform duration-300 ease-in-out hover:scale-105 active:scale-95">
+              <span class="absolute inset-0 rounded-xl bg-gradient-to-r from-teal-400 via-blue-500 to-purple-500 p-[2px] opacity-0 transition-opacity duration-500 group-hover:opacity-100"></span>
+              <span class="relative z-10 block px-6 py-2 rounded-xl bg-gray-950">
+                <span class="transition-all duration-500 group-hover:translate-x-1 inline-block">Saber más</span>
+              </span>
+            </button>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <h2>Público objetivo</h2>
+    <p>El proyecto está dirigido a jóvenes entre 18 y 25 años, estudiantes universitarios que pertenecen a la generación centennial. Este público se caracteriza por su afinidad con la tecnología, su interés por lo visual, lo inmediato y lo interactivo. Aunque pueden mostrar desinterés inicial por la ciencia, valoran las experiencias creativas, sensoriales y gamificadas que despiertan su curiosidad y les permiten aprender de manera no convencional.</p>
+  </section>
+
+  <section class="container">
+    <h2>Metodología</h2>
+    <p>El desarrollo de la Bitácora del Cacao se sustentó en una metodología de diseño centrada en el usuario, que incluyó fases claras de investigación, ideación, prototipado, validación e iteración. Desde el inicio del proyecto, se llevaron a cabo entrevistas con estudiantes, análisis de perfiles de usuario y ejercicios de observación participativa. Esto permitió definir con precisión las características de la experiencia.</p>
+  </section>
+
+  <!-- Formulario de suscripción -->
+<section class="container">
+  <div class="subscribe-form">
+    <h2>¿Quieres recibir más información?</h2>
+    <p>Déjanos tu correo y te mantendremos al tanto de nuevas actividades y experiencias de la Bitácora del Cacao.</p>
+    <form id="formulario-suscripcion">
+      <label for="email"><strong>Correo electrónico:</strong></label><br>
+      <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required><br>
+
+      <div class="relative group mt-4 flex justify-center">
+        <button
+          type="submit"
+          class="relative inline-block p-px font-semibold leading-6 text-white bg-gray-800 shadow-2xl cursor-pointer rounded-xl shadow-zinc-900 transition-transform duration-300 ease-in-out hover:scale-105 active:scale-95"
+        >
+          <span
+            class="absolute inset-0 rounded-xl bg-gradient-to-r from-teal-400 via-blue-500 to-purple-500 p-[2px] opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+          ></span>
+
+          <span class="relative z-10 block px-6 py-2 rounded-xl bg-gray-950">
+            <span class="transition-all duration-500 group-hover:translate-x-1 inline-block">
+              Suscribirme
+            </span>
+          </span>
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<div class="switch-container">
+  <label class="switch">
+    <input type="checkbox" id="toggle-contraste">
+    <span class="slider"></span>
+  </label>
+</div>
+
+  <footer>
+    <p>&copy; 2025 Bitácora del Cacao - Proyecto académico Universidad EAFIT</p>
+  </footer>
+
+<script type="module" src="./js/guardarFormulario.js"></script>
+<script src="formulario.js"></script>
+<script src="navbarScroll.js"></script>
+</body>
+</html>

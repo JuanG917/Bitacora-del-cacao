@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Máquina Arcade del Cacao</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="estilo.css" />
+  <link rel="stylesheet" href="arcade.css" />
+  <link rel="stylesheet" href="switch.css" />
+  <link rel="stylesheet" href="formulario.css" />  
+  <script src="navbarScroll.js"></script>
+  <script src="contraste.js"></script>
+
+</head>
+<body>
+<nav class="navbar">
+  <div class="navbar-container">
+    <a href="index.html" class="nav-logo">
+      <img src="Imagenes_inicio/logo.png" alt="Logo" class="nav-logo-img">
+      <span class="nav-logo-text">Bitácora del Cacao</span>
+    </a>
+    <ul class="nav-menu">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="arcade.html">Máquina Arcade</a></li>
+      <li><a href="tiendita.html">Tiendita</a></li>
+    </ul>
+  </div>
+</nav>
+
+  <header class="hero hero-arcade">
+    <div class="hero-text">
+      <h1>Máquina Arcade del Cacao</h1>
+      <p>Aprende jugando sobre la domesticación del cacao</p>
+    </div>
+  </header>
+
+<section class="container two-column">
+  <div class="text-content">
+    <h2>¿Qué es la Máquina Arcade?</h2>
+    <p>La Máquina Arcade del Cacao es una experiencia interactiva que forma parte del recorrido de la Bitácora del Cacao. Está diseñada como un videojuego físico que permite a los visitantes aprender de forma divertida sobre las fases de domesticación del cacao. A través de controles mecánicos y pantallas visuales, los usuarios participan en minijuegos que presentan el contenido de manera accesible y entretenida.</p>
+
+    <p>La máquina está ambientada con estética retro en pixel art, lo que genera una atmósfera nostálgica y llamativa. Cada fase del juego responde a una pregunta clave sobre el proceso del cacao, lo que facilita el aprendizaje sin necesidad de formatos tradicionales de lectura o conferencias.</p>
+  </div>
+  <div class="image-content">
+    <img src="images_arcade/arcade.png" alt="Máquina Arcade del Cacao">
+  </div>
+</section>
+
+
+  <section class="container">
+    <h2>¿Qué busca esta experiencia?</h2>
+    <p>El propósito de la Máquina Arcade es motivar la apropiación del conocimiento científico a través de la gamificación. Al integrar mecánicas de juego con narrativa educativa, se logra captar la atención del público joven y mantener su interés durante todo el recorrido.</p>
+    <p>Además, al final de la experiencia, los usuarios reciben como premio una muestra de chocolate, lo que genera una conexión directa entre el aprendizaje y la recompensa sensorial.</p>
+  </section>
+
+  <section class="container">
+    <h2>Características del juego</h2>
+    <ul>
+      <li>Interfaz retro inspirada en videojuegos clásicos.</li>
+      <li>Minijuegos breves sobre las etapas del cacao: siembra, cosecha, fermentación y secado.</li>
+      <li>Controles físicos intuitivos y pantalla incorporada.</li>
+      <li>Sistema de retroalimentación visual y sonora para guiar al jugador.</li>
+      <li>Recompensa final: degustación de chocolate artesanal.</li>
+    </ul>
+  </section>
+  <!-- Formulario de suscripción -->
+<section class="container">
+  <div class="subscribe-form">
+    <h2>¿Quieres recibir más información?</h2>
+    <p>Déjanos tu correo y te mantendremos al tanto de nuevas actividades y experiencias de la Bitácora del Cacao.</p>
+    <form id="formulario-suscripcion">
+      <label for="email"><strong>Correo electrónico:</strong></label><br>
+      <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required><br>
+
+      <div class="relative group mt-4 flex justify-center">
+        <button
+          type="submit"
+          class="relative inline-block p-px font-semibold leading-6 text-white bg-gray-800 shadow-2xl cursor-pointer rounded-xl shadow-zinc-900 transition-transform duration-300 ease-in-out hover:scale-105 active:scale-95"
+        >
+          <span
+            class="absolute inset-0 rounded-xl bg-gradient-to-r from-teal-400 via-blue-500 to-purple-500 p-[2px] opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+          ></span>
+
+          <span class="relative z-10 block px-6 py-2 rounded-xl bg-gray-950">
+            <span class="transition-all duration-500 group-hover:translate-x-1 inline-block">
+              Suscribirme
+            </span>
+          </span>
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<div class="switch-container">
+  <label class="switch">
+    <input type="checkbox" id="toggle-contraste">
+    <span class="slider"></span>
+  </label>
+</div>
+
+  <footer>
+    <p>&copy; 2025 Bitácora del Cacao - Proyecto académico Universidad EAFIT</p>
+  </footer>
+
+<script type="module" src="./js/guardarFormulario.js"></script>
+<script src="formulario.js"></script>
+<script src="navbarScroll.js"></script>
+</body>
+</html>
